@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+
+}
+body {
+  width: 375px;
+  background-color: #ECF2F8;
+  ;
+}
+
+
+.container {
+  width: 327px;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 79px;
+  margin-bottom: 89px;
+  background-color: white;
+  font-family: "Manrope";
+  
+}
+
+.container img {
+  margin-bottom: 36px;
+  border-radius: 10px 10px 0 0;
+}
+.container h2 {
+  width: 263px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+  padding-left: 32px;
+
+  
+  
+  color: #48556A;
+  margin-bottom: 12px;
+}
+
+.container p {
+  width: 263px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.12187500298023224px;
+  text-align: left;
+  color: #6E8098;
+  margin-bottom: 20px;
+  padding-left: 32px;
+
+  
+}
+
+.share {
+  height: 64px;
+  background-color: #48556A;
+  border-radius: 0 0 10px 10px;
+  
+}
+
+.sharep p {
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 5px;
+  padding-top: 22px;
+
+}
+.sharep a {
+  text-decoration: none;
+  position: relative;
+  padding-right: 16px;
+  bottom: 45px;
+  left: 115px;
+}
