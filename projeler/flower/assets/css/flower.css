@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+  
+}
+
+body {
+  background-image: url(/projeler/flower/assets/img/Imageflower.png);
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  width: 1440px;
+
+}
+
+.content {
+  width: 920px;
+  margin-left: 260px;
+  margin-top: 354px;
+  font-family: "Montserrat";
+  
+}
+.content h1 {
+  font-size: 80px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.text  {
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.text p {
+  width: 720px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+  letter-spacing: -0.3499999940395355px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-left: 100px;
+  
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #094BAC;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 23px;
+  border-radius: 32px;
+
+}
