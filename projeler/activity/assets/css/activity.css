@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 550px; 
+  background-color: gray;
+}
+.bod {
+  border-radius: 10px;
+  width: 550px;
+  height: 378px;
+  background-color: white;
+  padding-left: 24px;
+}
+
+
+.pop  {
+  width: 550px;
+}
+
+.message {
+  border-top: 1px solid gray;
+  margin-bottom: 24px;
+  font-family: "Open Sans";
+}
+.message:hover {
+  border: 1px solid blue;
+}
+
+.bod p {
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: left;
+}
+
+.text {
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #807E7E;
+
+}
