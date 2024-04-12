@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 1440px;
+  background-color: white;
+  margin-left: 165px;
+
+}
+
+.head {
+  width: 1110px;
+  margin-top: 80px;
+  margin-bottom: 61px;
+  
+}
+.head h3 {
+  width: 824px;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: left;
+  margin-bottom: 28px; 
+
+}
+.head p {
+  text-align: left;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #52647C;
+}
+.head p img {
+  vertical-align: middle;
+}
+
+.text1 {
+  width: 1110px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 80px;
+  font-family: "Open Sans";
+
+} 
+
+.sec2 {
+  width: 1110px;
+  height: 547px;
+}
+
+.sec2 img {
+  float: left;
+  width: 540px;
+  height: 387px;
+  border-radius: 6px;
+}
+
+.sec2t h6 {
+font-size: 20px;
+font-weight: 700;
+line-height: 30px;
+text-align: left;
+margin-bottom: 16px;
+font-family: "Montserrat";
+
+}
+
+.sec2t p {
+
+font-size: 16px;
+font-weight: 400;
+line-height: 28px;
+text-align: left;
+font-family: "Open Sans";
+
+
+}
+
+.quote {
+  width: 1110px;
+  height: 347px;
+  background-color: #ECF1F8;
+  margin-bottom: 80px;
+}
+.quote h4 {
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: -0.3499999940395355px;
+  text-align: center;
+  padding-top: 96px;
+  padding-left: 126px;
+  padding-right: 126px;
+  font-family: "Montserrat";
+
+}
+.quote h6 {
+  position: relative;
+  width: 140px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  left: 470px;
+  font-family: "Montserrat";
+
+
+}
+
+.sec3 {
+  width: 1110px;
+  margin-bottom: 80px;
+}
+
+.sec3 img {
+  float: right;
+  margin-bottom: 80px;
+}
+
+.sec3t h6 {
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  margin-bottom: 16px;
+  font-family: "Montserrat";
+
+}
+
+.sec3t p {
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  font-family: "Open Sans";
+
+}
+
+.vid h4 {
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: -0.3499999940395355px;
+  text-align: left;
+
+}
+
+.path {
+  position: relative;
+  width: 88px;
+  height: 88px;
+  top: -360px;
+  left: 510px;
+  padding: 11px 16.5px 12.82px 18.33px;
+ 
+
+}
