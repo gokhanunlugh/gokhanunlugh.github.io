@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  width: 1440px;
+  padding-top: 120px;
+  padding-left: 155px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  width: 874px;
+
+  margin-bottom: 200px;
+}
+
+.header h3 {
+  font-size: 30px;
+  margin-bottom: 12px;
+  font-family: "Montserrat";
+}
+
+.header h1 {
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-family: "Montserrat";
+  font-weight: 600  ;
+  line-height: 70px;
+
+}
+
+.projectTitle {
+  margin-bottom: 40px;
+  font-family: "Montserrat";
+
+}
+
+.kfc {
+  width: 1110px;
+  padding: 24px;
+  border: 1px solid #c4c4c4;
+  margin-bottom: 80px;
+}
+
+.kfc h3 {
+  font-family: "Montserrat";
+  font-size: 30px;
+}
+
+
+.kfc img {
+  margin-bottom: 24px;
+}
+.kfc a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat";
+  font-size: 14px;
+  
+}
+.kfc a img {
+  margin-bottom: 0;
+}
+.kfc h2 {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+
+.kfc p {
+  width: 570px;
+  font-size: 16px;
+  padding-top: 12px;
+  margin-bottom: 64px;
+  font-family: "Open Sans";
+}
+
+.header h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.end p {
+  margin-left: 165px;
+  margin-bottom: 32px;
+}

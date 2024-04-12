@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+.bod {
+  width: 1110px;
+  height: 349px;
+  background-color: #121212;
+}
+
+img {
+  position: relative;
+  width: 368.5px;
+  height: 313px;
+  top: -150px;
+  left: 680px;
+} 
+
+.text {
+  position: relative;
+  color: white;
+  width: 426px;
+  left: 96px;
+  top: 83px;
+  font-family: "Montserrat";
+}
+
+.text h3 {
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: left;
+  margin-bottom: 24px;
+
+}
+
+button {
+  width: 280px;
+  height: 64px;
+  padding: 16px 72px 16px 72px;
+  gap: 16px;
+  border-radius: 3px;
+  background-color: #DC3545;
+  color: white;
+  font-size: 23px;
+}

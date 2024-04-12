@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  width: 1440px;
+  background-color: #E0E8FF;
+  
+}
+
+.container {
+  width: 450px;
+  border-radius: 20px;
+  margin-top: 102px;
+  margin-bottom: 166px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  text-align: center;
+  font-family: "Red Hat Display";
+
+} 
+
+.container h1 {
+  margin-top: 56px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17px;
+  font-size: 28px;
+  color: #1F2E55;
+  text-align: center;
+  font-weight: 900;
+}
+
+.container p {
+  color: #717FA6;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  margin-bottom: 58.48px;
+}
+
+.container a {
+  width: 354px;
+  padding: 17px 102px 17px 102px;
+  font-size: 15px;
+  color: #FFFFFF;
+  background-color: #382AE1;
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  
+
+  }
+
+  button {
+    margin-top: 36px;
+    margin-bottom: 53px;
+    background-color: transparent;
+    border: 0px;
+    color: #717FA6;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 19.85px;
+    text-align: left;
+
+  }
