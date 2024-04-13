@@ -14,8 +14,8 @@ body {
   background-position-x: left, 1149px;
 }
 .container {
-  margin-left: 165px;
-  margin-right: 165px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1, h2, h3, h4, p, a {
