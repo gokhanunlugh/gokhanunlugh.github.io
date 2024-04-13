@@ -5,8 +5,8 @@
 }
 body {
   width: 1440px;
-  padding-left: 165px;
-  padding-right: 165px;
+  padding-left: auto;
+  padding-right: auto;
 }
 a {
   text-decoration: none;
