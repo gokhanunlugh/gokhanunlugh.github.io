@@ -12,11 +12,11 @@ body {
   background-repeat: no-repeat;
   background-position-y: 133px, 1077px;
   background-position-x: left, 1149px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
 .container {
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1, h2, h3, h4, p, a {
