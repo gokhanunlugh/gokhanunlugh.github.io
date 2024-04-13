@@ -5,8 +5,7 @@
 }
 body {
   width: 1440px;
-  padding-left: auto;
-  padding-right: auto;
+  margin-inline: auto;
 }
 a {
   text-decoration: none;
