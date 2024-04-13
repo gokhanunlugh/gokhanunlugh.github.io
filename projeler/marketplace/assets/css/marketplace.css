@@ -7,6 +7,9 @@ body {
   width: 1440px;
   margin-inline: auto;
 }
+.bod {
+  width: 1110px;
+}
 a {
   text-decoration: none;
   color: black;
@@ -261,12 +264,12 @@ details[open] summary {
 }
 
 .inbox {
-  background: url(/projeler/marketplace/assets/img/inbox.png) no-repeat;
+  background: url(/projeler/marketplace/assets/img/inbox.png) no-repeat ;
   text-align: center;
-
+  display: flex;
+  justify-content: center;
 }
 .intext {
-  margin-left: 342px;
   width: 426px;
 }
 
