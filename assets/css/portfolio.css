@@ -11,7 +11,7 @@ body {
   background-image: url(/assets/img/Group26.png), url(/assets/img/ovalright.png);
   background-repeat: no-repeat;
   background-position-y: 133px, 1077px;
-  background-position-x: left, 1149px;
+  background-position-x: left, right;
   margin-inline: auto;
 
 }
