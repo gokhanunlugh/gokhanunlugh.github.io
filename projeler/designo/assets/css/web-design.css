@@ -250,7 +250,7 @@ a {
   color: white;
   
 }
-.context span:hover {
+.context:hover  span {
   background-color: #E7816B;
   color: white;
 
