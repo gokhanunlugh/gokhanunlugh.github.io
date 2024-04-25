@@ -112,6 +112,8 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 43px;
+  padding-top: 43px;
+
 }
 
 .nav {
