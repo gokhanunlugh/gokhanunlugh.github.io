@@ -1,0 +1,183 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 a {
+  overflow-wrap: break-word;
+  font-family: "Barlow";
+  color: #162542;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+h1 {
+
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 56px;
+  margin-bottom: 24px;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #7B8BAD;
+}
+
+.container {
+  width: 1110px;
+  margin-inline: auto;
+  padding-top: 55px;
+  position: relative;
+
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 83px;
+}
+
+.preorder-button {
+  padding-block: 16px;
+  padding-inline: 26px;
+  background-color: #E8EFF2;
+  color: #162542;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.preorder a {
+  background-color: #F16718;
+  color: white;
+  padding-block: 16px;
+  padding-inline: 26px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero {
+  display: flex;
+  gap: 125px;
+  margin-bottom: 30px;
+}
+
+.hero-content {
+  padding-top: 60px;
+}
+
+.hero-content p {
+  margin-bottom: 40px;
+}
+
+.preorder {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.preorder p {
+  padding-top: 36px;
+
+}
+
+.product {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 168px;
+}
+
+.product-content {
+  width: 255px;
+  padding-top: 112px;
+}
+.product-mid  {
+  margin-right: auto;
+}
+
+.about-product {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+  margin-bottom: 128px;
+
+}
+
+.about img {
+  margin-bottom: 48px;
+}
+
+.center {
+  text-align: center;
+}
+
+.preorder-button:hover {
+  background-color: #162542;
+  color: white;
+}
+
+.preorder a:hover {
+  background-color: #FF9B62;
+}
+
+
+
+.rightbg {
+  width: 255px;
+  height: 240px;
+  top: 196px;
+  left: 1140px;
+  background-color: #E8EFF2;
+  border-radius: 10px;
+  position: absolute  ;
+  z-index: -1;
+
+}
+
+.leftbg {
+  width: 255px;
+  height: 236px;
+  top: 950px;
+  left: -285px;
+  background-color: #E8EFF2;
+  border-radius: 10px;
+  position: absolute;
+  z-index: -1;
+
+}
+
+
