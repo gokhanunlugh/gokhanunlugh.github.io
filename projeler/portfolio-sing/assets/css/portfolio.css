@@ -190,13 +190,7 @@ a {
   color: #fff7f0;
 }
 
-.header .btn:hover {
-  background-color: #755CDE;
-}
 
-.btn:hover {
-  background-color: #F6A560;
-}
 
 @media (width > 689px) {
 
@@ -311,5 +305,12 @@ a {
     position: static;
     width: 445px;
     height: 445px;
+  }
+  .header .btn:hover {
+    background-color: #755CDE;
+  }
+
+  .btn:hover {
+    background-color: #F6A560;
   }
 }
