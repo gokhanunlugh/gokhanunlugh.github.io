@@ -298,6 +298,8 @@ span {
     grid-template-columns: repeat(3,1fr);
     gap: 40px 30px;
     width: 1110px;
+    padding-inline: 0;
+
   }
   .senior {
     width: 350px;
