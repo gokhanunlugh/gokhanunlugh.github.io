@@ -343,6 +343,19 @@ span {
 
 
   }
+    .tablet-search:hover {
+    background-color: #939BF4;
+  }
+
+  .footer a:hover {
+    background-color: #939BF4;
+
+  }
+
+  .senior-text a:hover {
+    color: #6E8098;
+  }
+
 
 
 }
