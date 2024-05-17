@@ -1,0 +1,246 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "League Spartan";
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  background-color: #17062A;
+}
+
+.container {
+  width: 327px;
+  margin-inline: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+  margin-bottom: 32px;
+  padding-top: 30px;
+  color: #FFE53D;
+}
+
+.themes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.themes p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11.04px;
+}
+
+.theme-numbers {
+  display: flex;
+  gap: 11px;
+  justify-content: space-evenly;
+  width: 71px;
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+
+.theme-select {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+
+}
+
+.theme-selected {
+  width: 71px;
+  height: 26px;
+  background-color: #D2CDCD;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.theme-selected img {
+  padding-right: 5px;
+}
+
+
+input {
+  width: 327px;
+  height: 88px;
+  background-color: #1E0936;
+  border: none;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 36.8px;
+  letter-spacing: -0.6666666865348816px;
+  text-align: right;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  color: #FFE53D;
+  padding-inline: 24px;
+
+
+}
+
+.calculations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  padding: 24px;
+  background-color: #1E0936;
+  border-radius: 5px;
+}
+
+.double {
+  grid-column: auto / span 2;
+  width: 133px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18.4px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  color: white;
+}
+button:nth-child(17) {
+  box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+  background-color: #56077C;
+
+}
+
+button:last-child {
+  background-color: #00DED0;
+  box-shadow: 0px -4px 0px 0px #6CF9F1 inset;
+
+}
+
+button {
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29.44px;
+  letter-spacing: -0.5333333611488342px;
+  text-align: center;
+  background-color: #331C4D;
+  box-shadow: 0px -4px 0px 0px #881C9E inset;
+  width: 60px;
+  height: 64px;
+  border-radius: 5px;
+  color: #FFE53D;;
+  border: none;
+}
+
+.numbers:nth-child(4) {
+  color: white;
+  background-color: #56077C;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18.4px;
+  letter-spacing: -0.3333333432674408px;
+  text-align: center;
+  box-shadow: 0px -4px 0px 0px #BE15F4 inset;
+
+
+
+}
+
+
+@media (width >= 540px) {
+  .container {
+    width: 540px;
+    margin-inline: auto;
+  }
+
+  input {
+    width: 540px;
+    height: 128px;
+    padding-inline: 32px;
+
+  }
+
+  .calculations {
+    padding: 32px 30px;
+    gap: 25px 24px;
+   }
+
+  button {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36.8px;
+    letter-spacing: -0.6666666865348816px;
+    text-align: center;
+    width: 101px;
+   }
+
+   .double {
+    width: 227px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 25.76px;
+    letter-spacing: -0.46666666865348816px;
+    text-align: center;
+   }
+   button:hover {
+    background-color: #FFFFFE;
+   }
+   .numbers:nth-child(4) {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 25.76px;
+    letter-spacing: -0.46666666865348816px;
+    text-align: center;
+
+
+   }
+   .numbers:nth-child(4):hover {
+    background-color: #8631AF;
+   }
+
+   button:nth-child(17):hover {
+    background-color: #8631AF;
+   }
+
+   button:last-child:hover {
+    background-color: #93FFF8;
+   }
+}

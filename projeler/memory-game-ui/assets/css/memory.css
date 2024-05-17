@@ -1,0 +1,274 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "Atkinson Hyperlegible";
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+body {
+  background-color: #152938;
+}
+
+.container {
+  width: 327px;
+  margin-inline: 24px;
+
+}
+
+h2  {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39.68px;
+  text-align: center;
+  margin-bottom: 45px;
+  padding-top: 80px;
+  color: #FCFCFC;
+
+}
+
+p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.84px;
+  text-align: center;
+  margin-bottom: 11px;
+
+}
+
+button {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.84px;
+  text-align: center;
+  margin-bottom: 24px;
+  border: none;
+
+}
+
+.start {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.32px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.theme-options {
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+}
+
+.player-numbers  {
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+}
+
+.grid-options {
+  display: flex;
+  gap: 11px;
+  justify-content: center;
+}
+
+.game-options {
+  background-color: #FCFCFC;
+  border-radius: 10px;
+  padding-block: 24px;
+
+}
+
+.theme-options button:first-child {
+  padding: 10px 33px;
+  background-color: #BCCED9;
+  border-radius: 20px;
+
+}
+
+.theme-options button:last-child {
+  padding: 10px 24px;
+  background-color: #BCCED9;
+  border-radius: 20px;
+
+}
+
+.player-numbers button {
+  padding: 10px 27px;
+  background-color: #BCCED9;
+  border-radius: 20px;
+}
+
+.grid-options button:first-child {
+  padding: 10px 52.5px;
+  background-color: #BCCED9;
+  border-radius: 20px;
+}
+.grid-options button:last-child {
+  padding: 10px 52.5px;
+  background-color: #BCCED9;
+  border-radius: 20px;
+}
+
+.start {
+  text-decoration: none;
+  color: #FCFCFC;
+  background-color: #FDA214;
+  padding: 12px 91px;
+  display: inline-block;
+  border-radius: 20px;
+
+}
+
+button:first-child {
+  background-color: #152938;
+}
+.theme-options button:first-child {
+  background-color: #152938;
+
+}
+.grid-options button:first-child {
+  background-color: #152938;
+
+}
+
+
+@media (width >= 768px) {
+  .container {
+    margin-inline: 57px;
+    width: 654px;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49.6px;
+    text-align: center;
+  }
+
+
+  .game-options {
+    padding: 56px;
+    display: grid;
+  }
+
+  p {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.8px;
+    text-align: left;
+    color: #7191A5;
+  }
+
+  button {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32.24px;
+    text-align: center;
+    color: #FCFCFC;
+  }
+  .theme-options {
+    gap: 30px;
+    justify-content: flex-start;
+  }
+  .theme-options button:first-child {
+    padding: 10px 83px;
+
+  }
+  
+  .theme-options button:last-child {
+    padding: 10px 74px;
+  
+  }
+
+  .player-numbers {
+    justify-content: flex-start;
+    gap: 21px;
+
+  }
+
+  .player-numbers button {
+    padding: 10px 52.13px;
+
+  }
+  
+  .grid-options button:first-child {
+    padding: 11px 109.5px;
+
+  }
+  .grid-options button:last-child {
+    padding: 10px 109.5px;
+
+  }
+
+
+}
+
+@media (width >= 1280px) {
+  .container {
+    margin-inline: auto;
+  }
+
+  button:hover {
+    background-color: #6395B8;
+  }
+
+  .theme-options button:hover {
+    background-color: #6395B8;
+  }
+
+  .grid-options button:hover {
+    background-color: #6395B8;
+
+  }
+
+  .start:hover {
+    background-color: #FFB84A;
+  }
+
+
+}
