@@ -168,6 +168,7 @@ h4 {
 .multiplayer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 
 .player {
@@ -301,6 +302,29 @@ h5 {
   color: #FCFCFC;
 }
 
+
+.selected-player {
+  position: relative;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #FDA214;
+  position: absolute;
+  top: -8px;
+  left: 21px;
+}
+
+.current-turn {
+  display: none;
+}
+
+
+
+
 @media (width >= 768px) {
   .container {
     width: 689px;
@@ -389,7 +413,15 @@ h5 {
     width: 164px;
     height: 80px;
     flex-shrink: 0;
+    
   }
+  h4 {
+    text-align: left;
+  }
+  .multiplayer p {
+    text-align: left;
+  }
+
   .selected-player {
     width: 164px;
     height: 80px;
@@ -482,6 +514,19 @@ h5 {
   }
 
 
+  .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #FDA214;
+    position: absolute;
+    top: -12px;
+    left: 70px;
+  }
+  
+
+
 }
 
 
@@ -537,6 +582,89 @@ h5 {
 
   .winner {
     margin-inline: auto;
+  }
+
+  .game-4x4-icon  {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 49.6px;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 134px;
+    width: 532px;
+    margin-inline: auto;
+  
+  }
+  
+  .game-4x4-icon button {
+    border-radius: 50%;
+    width: 118px;
+    height: 118px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game-4x4-icon img {
+    height: 56px;
+    width: 56px;
+  }
+  
+  .game-6x6-icon {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-inline: auto;
+    width: 572px;
+    gap: 16px;
+    margin-bottom: 83px;
+  }
+  
+  .game-6x6-icon button {
+    border-radius: 50%;
+    width: 82px;
+    height: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .game-6x6-icon img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    border-bottom: 19px solid #FDA214;
+    position: absolute;
+    top: -19px;
+    left: 108.5px;
+  }
+
+
+
+  .current-turn  {
+    position: absolute;
+
+    display: inline;
+    bottom: -39px;
+    left: 50px;
+
+  }
+
+  .blue {
+    color: #152938 !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    line-height: 16.12px !important;
+    letter-spacing: 5px !important;
+    text-align: center !important;
+
   }
 }
 
