@@ -165,7 +165,11 @@ h3 {
   
   button {
     width: 293px;
-    height: 30px;
+    height: 300px;
+  }
+  button img {
+    width: 281px;
+    height: 300px;
   }
   .score img {
     width: 150px;

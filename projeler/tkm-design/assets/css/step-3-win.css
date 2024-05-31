@@ -172,6 +172,17 @@ h1 {
   align-self: center;
 }
 
+#tas {
+  display: none;
+}
+
+#kagıt {
+  display: none;
+}
+
+#makas {
+  display: none;
+}
 
 @media (width >= 1366px) {
 

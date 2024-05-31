@@ -68,6 +68,8 @@ button {
   height: 133px;
 }
 
+
+
 .header {
   padding-top: 32px;
 }
@@ -79,6 +81,38 @@ button {
   border: 3px solid #FFFFFF4A;
   border-radius: 5px;
   align-items: center;
+}
+
+
+
+.score-count {
+  width: 80px;
+  padding: 10px 22px;
+  background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-count p {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 1.5625px;
+  text-align: center;
+  color: rgba(42, 69, 194, 1);
+}
+
+
+
+.score-count h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  color: rgba(86, 84, 104, 1);
 }
 .title {
   font-size: 21px;
@@ -137,6 +171,80 @@ h3 {
   align-self: center;
 }
 
+.result {
+  display: none;
+  flex-direction: column;
+  place-items: center;
+}
+
+.game-result {
+  width: 311px;
+  margin: 167px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.choice {
+  position: relative;
+}
+.choice::before {
+  content: "Senin Seçimin";
+  position: absolute;
+  top: -83px;
+  left: 0px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+}
+
+.comp-choice {
+  position: relative;
+}
+
+.comp-choice::before {
+  content: "Bilgisayarın Seçimi";
+  position: absolute;
+  top: 150px;
+  left:-15px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+}
+
+
+.again {
+  background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  color: rgba(59, 66, 98, 1);
+  padding: 15px 62px 14px 60px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 10px;
+  height: 48px;
+  width: 248px;
+}
+
+.result-text {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-align: center;
+  color: white;
+}
+
+
 
 @media (width >= 1366px) {
   .container {
@@ -149,15 +257,57 @@ h3 {
     margin-inline: auto;
 
   }
+  .score-count {
+    padding: 15px 47px;
+    background: linear-gradient(0deg, #F3F3F3 0%, #FFFFFF 100%);
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .score-count p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: 2.5px;
+    text-align: left;
+    color: rgba(42, 69, 194, 1);
+  }
+  .score-count h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 64px;
+    text-align: center;
+    color: rgba(86, 84, 104, 1);
+  }
   .game {
     width: 476px;
     margin-inline: auto;
+    background-image: url(/projeler/tkm-design/assets/img/Path2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 287px;
+  }
+  .game-result {
+    width: 700px;
+    margin: 167px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 77px;
   }
   
   button {
     width: 198px;
     height: 203px;
   }
+  button img{
+    width: 198px;
+    height: 203px;
+  }
+  
   .score img {
     width: 150px;
     height: 114px;
@@ -170,16 +320,16 @@ h3 {
     background-size: 50%;
   }
   .paper {
-    left: 70px;
-    top: -50px;
+    /* left: 20px; */
+    top: -70px;
   }
   .scissors {
-    top: -50px;
+    top: -70px;
   }
 
   .rock {
     bottom: -30px;
-    right: 110px;
+    right: 140px;
   }
 
   .rules {
@@ -191,6 +341,44 @@ h3 {
     background-color: white;
     color: #3B4262;
   }
+
+  .choice {
+    position: relative;
+  }
+
+  
+  .choice::before {
+    content: "Senin Seçimin";
+    position: absolute;
+    top: -103px;
+    left: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+  }
+
+  .comp-choice {
+    position: relative;
+  }
+
+  .comp-choice::before {
+    content: "Bilgisayarın Seçimi";
+    position: absolute;
+    top: -103px;
+    left: -10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: white;
+  }
+  
+
+
 
 
 }

@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/projeler/tkm-design/assets/css/tkm.css">
+  <script src="/projeler/tkm-design/assets/js/tkm.js" defer></script>
 </head>
 <body>
 
@@ -21,18 +22,32 @@
           Kağıt <br>
         Makas</h3>
         </div>
-        <img src="/projeler/tkm-design/assets/img/Group_3.png" alt="">
+        <div class="score-count">
+          <p>Skor</p>
+          <h1 class="counter">0</h1>
+        </div>
       </div>
     </div>
 
     <div class="game">
-      <button class="paper"><img src="/projeler/tkm-design/assets/img/kagıt.png" alt=""></button>
-      <button class="scissors"><img src="/projeler/tkm-design/assets/img/makas.png" alt=""></button>
-      <button class="rock"><img src="/projeler/tkm-design/assets/img/tas.png" alt=""></button>
+      <button onclick="game(kagıt)"  class="paper"><img src="/projeler/tkm-design/assets/img/kagıt.png" alt=""></button>
+      <button onclick="game(makas)"  class="scissors"><img src="/projeler/tkm-design/assets/img/makas.png" alt=""></button>
+      <button onclick="game(tas)"  class="rock"><img src="/projeler/tkm-design/assets/img/tas.png" alt=""></button>
     </div>
 
+    <div class="game-result">
+      <div class="choice">
+      </div>
+      <div class="result">
+        <h1 class="result-text"></h1>
+        <button class="again">Tekrar Oyna</button>
+      </div>
+      <div class="comp-choice">
+      </div>
 
-    <a href="#" class="rules">KURALLAR</a>
+
+    </div>
+    <a href="/projeler/tkm-design/rules.html" target="_blank" class="rules">KURALLAR</a>
 
 
   </div>

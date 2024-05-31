@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hesap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/projeler/bill/assets/css/bill.css">
+  <script src="/projeler/bill/assets/js/bill.js" defer></script>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="header"><img src="/projeler/bill/assets/img/SPLITTER.svg" alt="SPLITTER logo"></div>
+
+    <div class="content">
+      <div class="content-bill">
+        <div class="bill">
+          <p>Hesap</p>
+          <input type="number" placeholder="0" class="bill-amount">
+        </div>
+        <div class="tip">
+          <p>Bahşiş Miktarı %</p>
+          <div class="tip-percent">
+            <button>5</button>
+            <button>10</button>
+            <button>15</button>
+            <button>25</button>
+            <button>50</button>
+            <input type="number" placeholder="Özel" class="tip-input">
+          </div>
+        </div>
+        <div class="bill-split">
+          <p>Kişi Sayısı</p>
+          <input type="number" placeholder="1" class="split-number">
+        </div>
+      </div>
+      <div class="total">
+        <div class="total-tip">
+          <h3>Bahşiş Miktarı: <span class="tip-amount"></span></h3>
+          <p>/ kişi</p>
+        </div>
+        <div class="total-bill">
+          <h3>Toplam: <span class="total-amount"></span></h3>
+          <p>/ kişi</p>
+        </div>
+        <button class="reset">SIFIRLA</button>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
