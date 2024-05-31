@@ -34,7 +34,7 @@ function handlePersonNumbers() {
 numberofInput.addEventListener('keyup', handlePersonNumbers);
 
 function handleReset() {
-  location.reload()
+  window.location.reload(true);
 }
 
 reset.addEventListener('click', handleReset)
