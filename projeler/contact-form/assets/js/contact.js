@@ -14,9 +14,6 @@ let showSent = document.querySelector('.sent')
 let backGeneral = document.querySelector('.r-gen')
 let backSupport = document.querySelector('.r-sup')
 
-if (form['general'].checked === true) {
-  backGeneral.style.background = 'rgba(224, 241, 232, 1)';
-}
 
 
 
