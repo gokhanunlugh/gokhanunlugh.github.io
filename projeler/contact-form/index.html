@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bize Ulaşın</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/projeler/contact-form/assets/css/contact.css">
+  <script src="/projeler/contact-form/assets/js/contact.js" defer></script>
+</head>
+<body>
+  
+  <div class="container">
+    
+    <div class="sent">
+      <h3><img src="/projeler/contact-form/assets/img/Vector.png" alt="tik-onay resim"> Mesaj gönderildi! </h3>
+      <p>Formu doldurduğunuz için teşekkür ederiz. Yakında iletişime geçeceğiz!</p>
+    </div>
+
+    <form id="contact" action="" autocomplete="off" required>
+      <h1>Bize Ulaşın</h1>
+
+      <div class="id">
+        <div class="name">
+          <p>Ad <span>*</span></p>
+          <input type="text" name="" required id="name">
+          <p class="error-name">Bu alan zorunludur</p>
+        </div>
+      <div class="surname">
+        <p>Soyad <span>*</span></p>
+        <input type="text" name="" required id="surname">
+        <p class="error-surname">Bu alan zorunludur</p>
+      </div>
+      </div>
+
+      <div class="email">
+        <p>E-posta <span>*</span></p>
+        <input type="email" name="" required id="email">
+        <p class="error-email">Lütfen geçerli bir e-posta adresi girin</p>
+      </div>
+
+      <div class="query">
+        <p>Sorgu Tipi <span>*</span></p>
+        <div class="query-type">
+          <div class="radio r-gen">
+            <input type="radio" name="radAnswer"  required id="general">
+            <p>Genel sorgulama</p>
+          </div>
+          <div class="radio r-sup">
+            <input type="radio" name="radAnswer"  required id="support">
+            <p>Destek Talebi</p>
+          </div>
+        </div>
+        <p class="error-query">Bir sorgu tipi seçin</p>
+      </div>
+
+      <div class="message">
+        <p>Mesaj <span>*</span></p>
+        <textarea name="" id="message"></textarea>
+        <p class="error-message">Bu alan zorunludur</p>
+      </div>
+
+
+      <div class="check-error">
+        <div class="check">
+          <input type="checkbox" name="" required id="checkbox" class="checkbox">
+          <label for="checkbox">Ekibin benimle iletişime geçmesini kabul ediyorum <span>*</span></label>
+        </div>
+        <p class="error-checkbox">Bu formu göndermek için lütfen sizinle iletişime geçilmesine izin verin</p>
+      </div>
+
+      <button id="button">Gönder</button>
+
+    </form>
+
+
+
+
+
+
+
+    <p class="output"></p>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+</body>
+</html>
