@@ -1,0 +1,382 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: 'Space Grotesk';
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.number-error, .date-error, .cvv-error {
+  display: none;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.31px;
+  text-align: left;
+  color: #FF5050;
+
+}
+
+.hero {
+  background-image: url(/projeler/cards/assets/img/back-mobile.png);
+  background-repeat: no-repeat;
+  position: relative;
+  width: 375px;
+  height: 240px;
+  margin-bottom: 91px;
+}
+.frontside {
+  background: linear-gradient(163.95deg, #6348FE 4.74%, #610595 88.83%);
+  width: 286px;
+  height: 156px;
+  border-radius: 6px;
+  position: absolute;
+  left: 16px;
+  bottom: -43px;
+  padding: 17px 19px;
+}
+
+.backside {
+  width: 286px;
+  height: 156px;
+  background: linear-gradient(168.73deg, #FFFFFF 5%, #D2D3D9 91.69%);
+  border-radius: 6px;
+  padding-top: 15px;
+  position: absolute;
+  right: 16px;
+  top: 32px;
+}
+
+.card-magnet {
+  width: 286px;
+  height: 34.6px;
+  background-color: #2F2F2F;
+  margin-bottom: 16px;
+}
+
+.card-cvv {
+  width: 230.98px;
+  height: 29.74px;
+  background-color: #ADB5BE;
+  margin-inline: 27.5px;
+  padding-inline: 10px;
+  text-align: right;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 11.48px;
+  letter-spacing: 1.2857142686843872px;
+  padding-top: 8.5px;
+  color: #FFFFFF;
+
+}
+
+.big-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.small-circle {
+  height: 15.5px;
+  width: 15.5px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.card-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 37px;
+}
+
+.card-show-number {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-number {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  letter-spacing: 2.200000047683716px;
+  text-align: left;
+  margin-bottom: 17px;
+
+}
+
+.card-input-cvv {
+  display: flex;
+  flex-direction: column;
+}
+.card-date {
+  display: flex;
+  flex-direction: column;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 9px;
+  font-weight: 500;
+  line-height: 11.48px;
+  letter-spacing: 1.2857142686843872px;
+  text-align: left;
+
+}
+
+input {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  text-align: left;
+  color: #21092F;
+  margin-bottom: 20px;
+}
+
+form p {
+
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15.31px;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-bottom: 9px;
+
+}
+
+
+.sent {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 327px;
+  margin-inline: 24px;
+}
+
+.sent img {
+  margin-bottom: 35px;
+}
+
+.sent h1{
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 35.73px;
+  letter-spacing: 3.422222137451172px;
+  text-align: center;
+  color: #21092F;
+}
+
+.sent p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22.97px;
+  text-align: center;
+  color: #8F8694;
+  margin-bottom: 48px;
+}
+
+.submit {
+  width: 327px;
+  height: 53px;
+  background-color: #21092F;
+  color: white;
+  padding: 15px 130px;
+  border-radius: 6px;
+  margin-inline: 24px;
+  margin-bottom: 45px;
+}
+
+form {
+  margin-inline: 24px;
+  margin-bottom: 28px;
+}
+
+.name {
+  text-transform: uppercase;
+}
+
+input {
+  width: 327px;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid #DFDEE0;
+  padding-left: 16px;
+}
+
+input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+
+.card-date input {
+  width: 72px;
+}
+
+.card-input-cvv input {
+  width: 164px;
+}
+
+
+.card-input-details {
+  display: flex;
+  gap: 15px;
+}
+
+@media (width >= 1440px) {
+  
+  .container {
+    display: flex;
+    gap: 349px;
+    align-items: center;
+
+  }
+
+  .hero {
+    background-image: url(/projeler/cards/assets/img/bg-desktop.png);
+    background-repeat: no-repeat;
+    width: 483px;
+    height: 900px;
+    margin: 0;
+  }
+
+  .frontside {
+    width: 447px;
+    height: 245px;
+    top: 187px;
+    left: 164px;
+    padding: 28px 32px;
+  }
+  .big-circle {
+    height: 47px;
+    width: 47px;
+  }
+
+  .small-circle {
+    height: 21px;
+    width: 21px;
+  }
+
+  .card-logo {
+    gap: 16px;
+    margin-bottom: 64px;
+  }
+
+  .card-number {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 35.73px;
+    letter-spacing: 3.422222137451172px;
+    text-align: left;
+    margin-bottom: 25.5px;
+
+  }
+
+  .card-details p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+    text-align: left;
+
+  }
+
+  .backside {
+    width: 447px;
+    height: 245px;
+    left: 258px;
+    top: 469px;
+    padding-top: 23px;
+  }
+
+  .card-magnet {
+    width: 447px;
+    height: 54px;
+    margin-bottom: 24px;
+  }
+
+  .card-cvv {
+    width: 361px;
+    height: 38px;
+    margin-left: 45px;
+    margin-bottom: 33px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17.86px;
+    letter-spacing: 2px;
+  }
+
+  .backside img {
+    margin-inline: 130.5px;
+  }
+
+  .sent {
+    width: 381px;
+    margin: 0;
+  }
+
+  .form {
+    margin-inline: 0;
+    margin-bottom: 40px;
+  }
+
+  input {
+    width: 381px;
+
+  }
+
+  .card-date input {
+    width: 80px;
+  }
+
+  #month {
+    margin-right: 6px;
+  }
+
+  .card-input-cvv input {
+    width: 191px;
+  }
+
+  .card-input-details {
+    gap: 20px;
+  }
+
+  .submit {
+    width: 381px;
+  }
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kart Giriş</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/projeler/cards/assets/css/cards.css">
+  <script src="/projeler/cards/assets/js/cards.js" defer></script>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="hero">
+      <div class="backside">
+        <div class="card-magnet"></div>
+        <div class="card-cvv"><p class="cvv">000</p></div>
+        <img src="/projeler/cards/assets/img/lines.png" alt="">
+
+      </div>
+      <div class="frontside">
+        <div class="card-logo">
+          <div class="big-circle"></div>
+          <div class="small-circle"></div> 
+        </div>
+        <h3 class="card-number">0000 0000 0000 0000</h3>
+        <div class="card-details">
+          <p class="name">Gökhan Ünlü</p>
+          <p class="date"><span class="month">00</span>/<span class="year">00</span></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="form">
+      <form action="" id="form" autocomplete="off" >
+        <p>Kart Sahibinin Adı</p>
+        <input type="text" id="cardHolder" placeholder="örn: Gökhan Ünlü">
+        <div class="card-show-number">
+          <p>Kart Numarası</p>
+          <input type="number" name="" id="cardNumber" placeholder="örn: 1234 5678 9123 0000">
+          <p class="number-error">Boş olamaz</p>
+        </div>
+        <div class="card-input-details">
+          <div class="card-date">
+            <p>GEÇ. TARİHİ (AA/YY)</p>
+            <div><input type="number" id="month" placeholder="AA"> <input type="number" id="year" placeholder="YY"></div>
+            <p class="date-error">Boş olamaz</p>
+          </div>
+          <div class="card-input-cvv">
+            <p>CVV</p>
+            <input type="number" id="cvv"  placeholder="örn: 123">
+            <p class="cvv-error">Boş olamaz</p>
+          </div>
+        </div>
+      </form>
+      <div class="sent">
+        <img src="/projeler/cards/assets/img/Group-9.png" alt="Tik resim">
+        <h1>TEŞEKKÜRLER</h1>
+        <p>Kart bilgilerinizi ekledik</p>
+      </div>
+      <button class="submit">Onayla</button>
+    </div>
+
+
+
+  </div>
+
+
+
+
+</body>
+</html>
