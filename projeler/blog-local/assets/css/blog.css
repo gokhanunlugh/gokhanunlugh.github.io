@@ -1,0 +1,39 @@
+.form-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 200px;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+}
+.blog-form {
+  margin: 0 auto;
+  width: 400px;
+}
+
+button {
+  width: 200px;
+  margin-bottom: 5px; 
+}
+
+
+.blogList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.listGroup {
+  border:  1px solid black;
+}
+
+.listGroup img {
+  width: 200px;
+  height: 300px;
+}

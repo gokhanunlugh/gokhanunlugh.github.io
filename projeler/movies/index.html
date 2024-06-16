@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/projeler/movies/assets/css/movies.css">
+  <script src="/projeler/movies/assets/js/movies.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="movie-form">
+      <form action="" class="movieForm">
+        <div class="formGroup">
+          <label for="name">Film Adı:</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="formGroup">
+          <label for="subject">Konu:</label>
+          <input type="text" name="subject" id="subject">
+        </div>
+        <div class="formRadio">
+          <p>Kategori:</p>
+          <input type="radio" name="radio" value="Aksiyon" id="action">
+          <label for="action">Aksiyon</label> <br>
+          <input type="radio" name="radio" value="Komedi" id="comedy">
+          <label for="comedy">Komedi</label> <br>
+          <input type="radio" name="radio" value="Korku" id="horror">
+          <label for="horror">Korku</label> <br>
+          <input type="radio" name="radio" value="Fantezi" id="fantasy">
+          <label for="fantasy">Fantezi</label> <br>
+          <input type="radio" name="radio" value="BilimKurgu" id="sciFi">
+          <label for="sciFi">Bilim Kurgu</label>
+        </div>
+        <div class="formGroup">
+          <label for="score">Puan:</label>
+          <input type="number" placeholder="örn:8.5" name="score" id="score">
+        </div>
+        <div class="formGroup">
+          <label for="image">Görsel:</label>
+          <input type="text" placeholder="Resim Url 9:16" name="image" id="image">
+        </div>
+        <button type="submit" class="submit">Ekle</button>
+      </form>
+      <button class="reset">Reset</button>
+    </div>
+
+    <div class="lists">
+
+
+      <div class="regularList">
+
+      </div>
+
+      <div class="categoryList">
+        <div class="action">
+          <h3>Aksiyon</h3>
+          
+        </div>
+        <div class="comedy">
+          <h3>Komedi</h3>
+        </div>
+        <div class="horror">
+          <h3>Korku</h3>
+        </div>
+        <div class="fantasy">
+          <h3>Fantezi</h3>
+        </div>
+        <div class="sciFi">
+          <h3>Bilim Kurgu</h3>
+        </div>
+      </div>
+
+      <div class="scoreList">
+        <h3>Puana Göre Liste</h3>
+        <div class="listByScore">
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+
+
+  
+</body>
+</html>

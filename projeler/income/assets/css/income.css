@@ -1,0 +1,29 @@
+:is(.incomes, .expenses) {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 20px;
+}
+
+form {
+  width: 400px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+button {
+  width: 50px;
+  height: 30px;
+}
+
+
+label {
+  font-size: 20px;
+  font-family: system-ui;
+  font-weight: 900;
+}
+
+.lists {
+  display: flex;
+  gap: 40px;
+}

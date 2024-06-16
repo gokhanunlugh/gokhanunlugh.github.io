@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Öğrenci Notları</title>
+  <link rel="stylesheet" href="/projeler/grades/assets/css/grades.css">
+  <script src="/projeler/grades/assets/js/grades.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="">
+      <form action="" class="grades">
+        <div class="formGroup">
+          <label for="name"><p>Ad:</p></label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="formGroup">
+          <label for="lastName"><p>Soyad:</p></label>
+          <input type="text" name="lastName" id="lastName">
+        </div>
+        <div class="radioGroup">
+          <p>Bölüm:</p>
+          <div class="sectionGroup">
+            <input type="radio" name="section" id="section" value="Makine">
+            <label for="section"><p>Makine</p></label>
+          </div>
+          <div class="sectionGroup">
+            <input type="radio" name="section" id="section" value="Kimya">
+            <label for="section"><p>Kimya</p></label>
+          </div>
+          <div class="sectionGroup">
+            <input type="radio" name="section" id="section" value="İnşaat">
+            <label for="section"><p>İnşaat</p></label>
+          </div>
+        </div>
+        <div class="formGroup">
+          <label for="midterm1"><p>Vize 1:</p></label>
+          <input type="number" name="midterm1" id="midterm1">
+        </div>
+        <div class="formGroup">
+          <label for="midterm2"><p>Vize 2:</p></label>
+          <input type="number" name="midterm2" id="midterm2">
+        </div>
+        <div class="formGroup">
+          <label for="final"><p>Final:</p></label>
+          <input type="number" name="final" id="final">
+        </div>
+        <button type="submit">Ekle</button>
+      </form>
+      <button class="reset">Reset</button>
+    </div>
+
+    <div class="lists">
+
+      <div class="allList">
+
+      </div>
+
+      <div class="listBySection">
+        <div class="machine"><h3>Makine Mühendisliği</h3></div>
+        <div class="chemical"><h3>Kimya Mühendisliği</h3></div>
+        <div class="civil"><h3>İnşaat Mühendisliği</h3></div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+</body>
+</html>

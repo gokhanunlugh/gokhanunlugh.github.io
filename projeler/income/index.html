@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelir-Gider Hesaplama</title>
+  <link rel="stylesheet" href="/projeler/income/assets/css/income.css">
+  <script src="/projeler/income/assets/js/income.js" defer></script>
+</head>
+<body>
+
+
+  <div class="container">
+
+
+    <form class="form-input" >
+      <div class="incomes">
+        <label for="income">Gelir</label>
+        <input required type="number" placeholder="Gelir" name="income" id="income">
+      </div>
+      <div class="expenses">
+        <label for="expense">Gider</label>
+        <input required type="number" placeholder="Gider" name="expense" id="expense">
+      </div>
+      <button type="submit">Ekle</button>
+    </form>
+
+    <button class="reset">Reset</button>
+
+    <div class="lists">
+
+      <h3 >Gelir: <span class="income-total"></span> </h3>
+      <h3>Gider <span class="expense-total"></span></h3>
+
+      <h3>Genel Toplam: <span class="total"></span></h3>
+
+    </div>
+
+  </div>
+  
+</body>
+</html>
