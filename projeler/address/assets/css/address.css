@@ -1,0 +1,104 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+  display: flex;
+  gap: 20px;
+  padding-top: 50px;
+}
+
+form {
+  width: 250px;
+
+}
+
+textarea {
+  resize: none;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+span {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.addressGroup {
+  width: 250px;
+  border: 1px solid black;
+}
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 250px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.popup.open {
+  display: flex;
+}

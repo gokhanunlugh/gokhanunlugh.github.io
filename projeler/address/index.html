@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adres Defteri</title>
+  <link rel="stylesheet" href="/projeler/address/assets/css/address.css">
+  <script src="/projeler/address/assets/js/address.js" defer></script>
+</head>
+<body>
+
+
+  <div class="container">
+
+
+    <div class="">
+      
+          <form action="" class="addressForm">
+      
+            <div class="formGroup">
+              <label for="firstName">Ad:</label>
+              <input required type="text" name="firstName" id="firstName">
+            </div>
+            <div class="formGroup">
+              <label for="lastName">Soyad:</label>
+              <input required type="text" name="lastName" id="lastName">
+            </div>
+            <div class="formGroup">
+              <label for="number">Telefon:</label>
+              <input required type="number" name="number" id="number">
+            </div>
+            <div class="formGroup">
+              <label for="address">Adres:</label>
+              <textarea required name="address" id="address"></textarea>
+            </div>
+      
+            <button type="submit">Ekle</button>
+      
+          </form>
+      
+          <button class="reset">Defteri Sıfırla</button>
+          <button class="edit">Düzenle</button>
+      
+      
+    </div>
+
+    <div class="addressBook">
+
+    </div>
+
+
+
+    <div class="popup">
+      <form action="" class="bookEdit">
+        <div class="formGroup">
+          <label for="editName">Ad:</label>
+          <input  type="text" name="editName" id="editName">
+        </div>
+        <div class="formGroup">
+          <label for="editLastName">Soyad:</label>
+          <input  type="text" name="editLastName" id="editLastName">
+        </div>
+        <div class="formGroup">
+          <label for="editNumber">Telefon:</label>
+          <input  type="number" name="editNumber" id="editNumber">
+        </div>
+        <div class="formGroup">
+          <label for="editAddress">Adres:</label>
+          <textarea  name="editAddress" id="editAddress"></textarea>
+        </div>
+        <button type="submit" class="update">Güncelle</button>
+        <button class="cancel">İptal</button>
+      </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+  
+</body>
+</html>

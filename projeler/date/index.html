@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yaş Hesaplama</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/projeler/date/assets/css/date.css">
+  <script src="/projeler/date/assets/js/date.js" defer></script>
+</head>
+<body>
+  
+
+  <div class="container">
+
+
+
+    <form validate action="" class="ageForm">
+
+      <div class="formGroup">
+        <label for="day">GÜN</label>
+        <input required type="number" name="day" id="day">
+        <sub class="error-message" id="dayError">Geçerli bir gün giriniz</sub>
+      </div>
+      <div class="formGroup">
+        <label for="month">AY</label>
+        <input required type="number" name="month" id="month">
+        <sub class="error-message" id="monthError">Geçerli bir ay giriniz</sub>
+
+      </div>
+      <div class="formGroup">
+        <label for="year">YIL</label>
+        <input required type="number" name="year" id="year">
+        <sub class="error-message" id="yearError">Geçmişte olmalı</sub>
+
+      </div>
+
+    </form>
+    <button class="submit"><img src="/projeler/date/assets/img/Frame30.svg" alt=""></button>
+
+
+
+    <div class="age">
+      <h1><span class="purple"></span> yıl</h1>
+      <h1><span class="purple"></span> ay</h1>
+      <h1><span class="purple"></span> gün</h1>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+</body>
+</html>
