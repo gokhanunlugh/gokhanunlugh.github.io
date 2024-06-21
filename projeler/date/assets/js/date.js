@@ -1,22 +1,48 @@
 let form = document.querySelector('.ageForm');
 let submitBtn = document.querySelector('.submit');
 let age = document.querySelector('.age');
-
 let current = new Date();
 let currentYear = current.getFullYear();
 
+let dayError = document.querySelector('#dayError');
+let monthError = document.querySelector('#monthError');
+let yearError = document.querySelector('#yearError');
+
 function validate(e) {
   e.preventDefault();
-  form.classList.add('validated')
-  if (form.day.value <= 31 && form.month.value <=12 && form.year.value <= currentYear ) {
-    if(form.checkValidity()) {
-      calculateAge();
-    }
-  } else if (form.day.value > 31) {
-    
+
+  if (form.day.value > 31 || form.day.value === 0 || form.day.value === '') {
+    dayError.style.display = 'block'
+  } else if (form.day.value <= 31 && form.day.value !== 0 && form.day.value !== '') {
+    dayError.style.display = 'none'
   }
+  if (form.month.value > 12 || form.month.value === 0 || form.month.value === '') {
+    monthError.style.display = 'block'
+  } else if (form.month.value <= 12 && form.month.value !== 0 && form.month.value !== '') {
+    monthError.style.display = 'none'
+  }
+  if (form.year.value >= currentYear || form.year.value === 0 || form.year.value === '') {
+    yearError.style.display = 'block'
+  } else if (form.year.value < currentYear && form.year.value !== 0 && form.year.value !== '') {
+    yearError.style.display = 'none'
   }
 
+
+
+
+  form.classList.add('validated')
+  if (form.day.value <= 31 && form.month.value <=12 && form.year.value < currentYear ) {
+    if(form.checkValidity()) {
+      calculateAge();
+      
+    }
+
+  }
+
+
+  
+
+}
 
 
 
