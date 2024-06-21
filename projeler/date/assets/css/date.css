@@ -110,6 +110,11 @@ button {
   background: none;
 }
 
+
+.error-message {
+  display: none;
+}
+
 @media (width >= 1440px) {
 
   .container {
@@ -179,9 +184,6 @@ button {
     color: #FF5959;
   }
 
-  .error-message {
-    display: none;
-  }
   .has-error input {
     border-color: red;
   }
