@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notlar</title>
+  <link rel="stylesheet" href="/projeler/grades2/assets/css/grades.css">
+  <script src="/projeler/grades2/assets/js/grades.js" defer></script>
+</head>
+<body>
+  
+  <header><h2>Notlar</h2><button class="addGradesBtn">Not Ekle</button></header>
+  <div class="container">
+    
+    <div class="listBySection">
+      <div class="machine"><h3>Makine Mühendisliği</h3>
+      <div id="machineContainer"></div></div>
+      <div class="chemical"><h3>Kimya Mühendisliği</h3>
+        <div id="chemicalContainer"></div></div>
+      <div class="civil"><h3>İnşaat Mühendisliği</h3>
+        <div id="civilContainer"></div></div>
+    </div>
+
+    <div class="grades" id="gradesContainer">
+
+
+
+
+
+  </div>
+
+
+  <dialog id="modal">
+    <form method="dialog" class="gradesForm" id="gradesForm">
+      <h2 class="modalAddNew">Not Ekle</h2>
+      <h2 class="modalEdit">Not Düzenle</h2>
+      <div class="formGroup">
+        <label for="name"><p>Ad:</p></label>
+        <input required type="text" name="firstName" id="firstName">
+      </div>
+      <div class="formGroup">
+        <label for="lastName"><p>Soyad:</p></label>
+        <input required type="text" name="lastName" id="lastName">
+      </div>
+      <div class="radioGroup">
+        <p>Bölüm:</p>
+        <div class="sectionGroup">
+          <input required type="radio" name="section" id="section" value="Makine">
+          <label for="section"><p>Makine</p></label>
+        </div>
+        <div class="sectionGroup">
+          <input required type="radio" name="section" id="section" value="Kimya">
+          <label for="section"><p>Kimya</p></label>
+        </div>
+        <div class="sectionGroup">
+          <input required type="radio" name="section" id="section" value="İnşaat">
+          <label for="section"><p>İnşaat</p></label>
+        </div>
+      </div>
+      <div class="formGroup">
+        <label for="midterm1"><p>Vize 1:</p></label>
+        <input required type="number" name="midterm1" id="midterm1">
+      </div>
+      <div class="formGroup">
+        <label for="midterm2"><p>Vize 2:</p></label>
+        <input required type="number" name="midterm2" id="midterm2">
+      </div>
+      <div class="formGroup">
+        <label for="final"><p>Final:</p></label>
+        <input required type="number" name="final" id="final">
+      </div>
+      <p><input type="hidden" name="id"></p>
+      <p><button class="modalAddNew" type="submit">Ekle</button><button class="modalEdit">Kaydet</button> <button onclick="addressForm.reset();modal.close();">Vazgeç</button> </p>
+    </form>
+  </dialog>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alışveriş Sepeti</title>
+  <link rel="stylesheet" href="/projeler/shopping/assets/css/shoppingCart.css">
+  <script src="/projeler/shopping/assets/js/shoppingCart.js" defer></script>
+</head>
+<body>
+
+
+  <div class="container">
+    <header>
+      <h2>Sepet</h2>
+      <button class="addItem">Ürün Ekle</button>
+    </header>
+
+
+    <dialog id="modal">
+
+      <h2 class="modalAddNew">Ürün Ekle</h2>
+      <h2 class="modalEdit">Ürün Düzenle</h2>
+      <form method="dialog" id="shoppingForm">
+        <input required type="text" name="name" id="name" placeholder="Ürün Adı">
+        <select required name="category" id="category">
+          <option value="phone">Telefon</option>
+          <option value="pc">Bilgisayar</option>
+          <option value="laptop">Laptop</option>
+          <option value="accessory">Aksesuar</option>
+          <option value="tv">Televizyon</option>
+        </select>
+        <input required type="text" name="color" id="color" placeholder="Renk">
+        <input required type="number" name="price" id="price" placeholder="Fiyat">
+        <input type="hidden" name="id" id="id">
+        <p><button type="submit">Ekle</button> <button class="modalEdit">Kaydet</button> <button onclick="shoppingForm.reset();modal.close();">Vazgeç</button></p>
+      </form>
+      
+    </dialog>
+
+
+    
+    <div class="cart" id="cart"></div>
+    <div id="cartTotalContainer"></div>
+    <div id="products"></div>
+
+
+
+
+    <button id="emptyCart">Sepeti Temizle</button>
+
+
+
+
+
+
+
+  </div>
+  
+</body>
+</html>

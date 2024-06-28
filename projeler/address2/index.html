@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/projeler/address2/assets/css/address.css">
+  <script src="/projeler/address2/assets/js/address.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    
+    <header><h2>Adres Defteri</h2><button class="addAddressBtn">Adres Ekle</button></header>
+    
+
+    <div class="addressBook" id="addressContainer">
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+  </div>
+
+  <dialog id="modal">
+    <form method="dialog" class="addressForm" id="addressForm">
+      <h2 class="modalAddNew">Adres Ekle</h2>
+      <h2 class="modalEdit">Adres Düzenle</h2>
+
+      <input required type="text" name="firstName" placeholder="Ad" id="firstName">
+      
+      <input required type="text" name="lastName" placeholder="Soyad" id="lastName">
+      
+      <input required type="number" name="number" placeholder="Telefon" id="number">
+      
+      <textarea required name="addressText" placeholder="Adres" id="addressText"></textarea>
+      
+      <input type="hidden" name="id" >
+
+      <p><button class="modalAddNew" type="submit">Ekle</button><button class="modalEdit">Kaydet</button> <button onclick="addressForm.reset();modal.close();">Vazgeç</button> </p>
+
+    </form>
+    </dialog>
+
+  
+</body>
+</html>
