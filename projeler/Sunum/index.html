@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let ve Const</title>
+  <link rel="stylesheet" href="/projeler/sunum/assets/css/sunum.css">
+
+</head>
+<body>
+
+  <div class="container">
+
+    <header><h1>Javascript'te Değişkenler</h1></header>
+
+
+    <div class="intro">
+      <h2>Değişken</h2>
+
+      <p>JavaScript dilinde değişkenler veri depolamak için kullanılır.Bunun için let anahtar kelimesini kullanıyoruz</p>
+    
+      <p>Aşağıdaki cümle “mesaj” isminde bir değişken üretir:</p>
+      <div class="split">
+        <p><span class="var">let</span> <span class="varName">mesaj</span></p>
+      </div>
+
+      <p>Artık bunun içerisine bilgi koyulabilir.</p>
+
+
+      <div class="split">
+        <p><span class="varName">mesaj</span> = <span class="string">'Hello!'</span>;</p>
+        
+        <div class="image"><img src="/projeler/sunum/assets/img/helloLog.png" alt=""></div>
+      </div>
+
+      <h3>Let'in temel özellikleri</h3>
+      <div class="split">
+        <p><strong>1- Bloğa Özgü Kapsam (Block Scope):</strong>  <span class="var">let</span> ile tanımlanan bir değişken sadece tanımlandığı blok içinde geçerlidir. Blok, genellikle {} ile tanımlanan herhangi bir kod bloğu olabilir (fonksiyonlar, döngüler, koşullu ifadeler vb.).</p>
+        <div class="image"><img src="/projeler/sunum/assets/img/referenceError.png" alt=""></div>
+      </div>
+
+      <div class="split">
+        <p><strong>2- Hoisting (Kaldırma) Sorunu Yoktur:</strong>  <span class="var">let</span> ile tanımlanan değişkenler, tanımlandıkları satır öncesinde kullanılamazlar.</p>
+        <div class="image"><img src="/projeler/sunum/assets/img/hoisting.png" alt=""></div>
+      </div>
+
+      <div class="split">
+        <p><strong>3- Tekrar Tanımlama Engellemesi:</strong> Aynı blok içinde aynı isimde let ile bir değişken birden fazla kez tanımlanamaz. Ancak, farklı bloklarda aynı isimde let ile değişken tanımlanabilir:</p>
+        <div class="image"><img src="/projeler/sunum/assets/img/reuseLog.png" alt=""></div>
+      </div>
+
+
+      <h3>İsimlendirme</h3>
+
+      <div class="split">
+        <p>Değişkenlerin isimlendirilmesi genellikle <span class="var">camelCase</span> ve <span class="var">snake_case</span> ile yapılmaktadır.<span class="var">kebab-case</span> kullanımı veya kelimeler arası boşluk bırakmak syntax hatası verecektir. Her ne kadar birçok yerel dili desteklense bile ingilizce karakterler dışına çıkmak kodunuzun dengesini bozabilir. Görünmez hatalar verebilir. </p>
+        <div class="image"><img src="/projeler/sunum/assets/img/nameErrorLog.png" alt=""></div>
+      </div>
+
+      <div class="split">
+        <p>Aynı anda birden fazla değişken tanımlanabilir.</p>
+        <div class="image"><img src="/projeler/sunum/assets/img/multiNameLog.png" alt=""></div>
+      </div>
+
+
+
+
+      <h2>Sabit</h2>
+
+      <div class="split">
+        <p>JavaScript'te <span class="var">const</span>, <span class="var">let</span> gibi değişken tanımlamak için kullanılan bir anahtar kelimedir. <span class="var">const</span>, "constant" kelimesinin kısaltmasıdır ve Türkçe'de "sabit" anlamına gelir. <span class="var">const</span> ile tanımlanan bir değişkenin değeri, bir kez atanıp tanımlandıktan sonra değiştirilemez.</p>
+      </div>
+
+      <h3>Const'u ayıran özellikler</h3>
+
+      <div class="split">
+        <p><strong>Değerin Değişmezliği:</strong> <span class="var">const</span> ile tanımlanan bir değişkenin değeri, tanımlandıktan sonra değiştirilemez. Başka bir deyişle, bir <span class="var">const</span> değişkeni bir kez değer atandıktan sonra, bu değer daha sonra değiştirilemez veya yeniden atanamaz.</p>
+        <div class="pi"><img style="width: 371px;" src="/projeler/sunum/assets/img/letPi.png" alt=""> <img src="/projeler/sunum/assets/img/constPi.png" alt=""></div>
+      </div>
+
+
+      <div class="split">
+        <p><strong>Referans türleri:</strong> <span class="var">const</span> ile tanımlanmış bir referans türü(nesneler ve diziler gibi ) değişkenin içeriği değiştirilebilir, ancak değişkenin kendisi (yani, referansı) değiştirilemez. </p>
+      </div>
+
+      <div class="constRef"><div class="image"><img src="/projeler/sunum/assets/img/constPerson.png" alt=""></div>
+      <div class="image"><img src="/projeler/sunum/assets/img/constPop.png" alt=""></div>
+      <div class="image"><img src="/projeler/sunum/assets/img/constantArray.png" alt=""></div></div>
+
+    
+
+    </div>
+    
+
+
+
+
+
+
+
+  </div>
+
+  
+</body>
+</html>
