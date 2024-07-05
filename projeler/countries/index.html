@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ülkeler</title>
+  <link rel="stylesheet" href="/projeler/countries/assets/css/countries.css">
+  <script src="/projeler/countries/assets/js/countries.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Ülkeler</h1>
+      <button id="addCountryBtn">Ekle</button>
+    </header>
+
+
+    <div class="countries" id="countriesContainer"></div>
+
+
+
+  </div>
+
+
+  <dialog id="modal">
+    <h3 class="modalAddNew">Ülke Ekle</h3>
+    <h3 class="modalEdit">Ülke Düzenle</h3>
+    <form method="dialog" id="countriesForm">
+      <input type="text" name="countryName" placeholder="Ülke Adı">
+      <input type="number" name="population" placeholder="Nüfus">
+      <input type="text" name="flag" placeholder="Bayrak">
+      <input type="text" name="famousFood" placeholder="Ünlü Yemeği">
+      <input type="text" name="capitalCity" placeholder="Başkent">
+      <p><button class="modalAddNew">Ekle</button> <button class="modalEdit">Kaydet</button> <button
+          onclick="countriesForm.reset();modal.close();">Vazgeç</button></p>
+
+    </form>
+  </dialog>
+
+
+
+</body>
+
+</html>

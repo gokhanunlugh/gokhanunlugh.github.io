@@ -1,0 +1,102 @@
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+dialog {
+  margin: auto;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-family: system-ui;
+
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.countries {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+
+dialog {
+  padding: 10px;
+}
+
+dialog form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+
+
+svg {
+  width: 16px;
+  height: 16px;
+  fill: black;
+}
+
+.countryEditControls {
+  display: none;
+}
+
+.country:hover .countryEditControls {
+  display: flex; 
+  gap: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.country {
+  border: 1px solid black;
+  position: relative;
+}
+
+.modalEdit {
+  display: none;
+}
+
+.editModal .modalEdit {
+  display: initial;
+}
+
+.editModal .modalAddNew {
+  display: none;
+}
