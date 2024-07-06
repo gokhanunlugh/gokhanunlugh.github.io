@@ -30,11 +30,11 @@
     <h3 class="modalAddNew">Ülke Ekle</h3>
     <h3 class="modalEdit">Ülke Düzenle</h3>
     <form method="dialog" id="countriesForm">
-      <input type="text" name="countryName" placeholder="Ülke Adı">
-      <input type="number" name="population" placeholder="Nüfus">
-      <input type="text" name="flag" placeholder="Bayrak">
-      <input type="text" name="famousFood" placeholder="Ünlü Yemeği">
-      <input type="text" name="capitalCity" placeholder="Başkent">
+      <input required type="text" name="countryName" placeholder="Ülke Adı">
+      <input required type="number" name="population" placeholder="Nüfus">
+      <input required type="text" name="flag" placeholder="Bayrak">
+      <input required type="text" name="famousFood" placeholder="Ünlü Yemeği">
+      <input required type="text" name="capitalCity" placeholder="Başkent">
       <p><button class="modalAddNew">Ekle</button> <button class="modalEdit">Kaydet</button> <button
           onclick="countriesForm.reset();modal.close();">Vazgeç</button></p>
 
