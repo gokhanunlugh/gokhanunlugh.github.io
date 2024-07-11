@@ -11,7 +11,7 @@ let yearError = document.querySelector('#yearError');
 function validate(e) {
   e.preventDefault();
 
-  if (form.day.value > 31 || form.day.value === 0 || form.day.value === '' || form.day.value > getDaysInMonth(form.year.value, form.month.value) {
+  if (form.day.value > 31 || form.day.value === 0 || form.day.value === '' || form.day.value > getDaysInMonth(form.year.value, form.month.value)) {
     dayError.style.display = 'block'
   } else if (form.day.value <= 31 && form.day.value !== 0 && form.day.value !== '') {
     dayError.style.display = 'none'
