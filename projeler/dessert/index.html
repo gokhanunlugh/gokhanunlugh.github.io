@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desserts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/desserts.css">
+  <script src="/assets/js/dessert.js" defer></script>
+</head>
+<body>
+
+  
+  <div class="container">
+    <h1>Desserts</h1>
+
+    <div class="desktopContainer">
+      <div id="dessertGrid" class="dessertGrid">
+      
+      </div>
+      <div class="cart" id="cart">
+        <h2>Your Cart <span id="cartTotal">0</span></h2>
+        <img class="empty" src="/assets/img/cartPlaceHolder.png" alt="">
+        <div id="cartGrid" class="cartGrid">
+        </div>
+      
+        <div id="total" class="total">
+        </div>
+      
+        <p class="carbon"><img src="/assets/img/carbon_tree.png" alt=""> This is a <strong> carbon-neutral</strong>  delivery </p>
+        <button id="confirmBtn">Confirm Order</button>
+      </div>
+      
+      
+    </div>
+
+  </div>
+
+  
+
+  <dialog id="modal">
+    <img src="/assets/img/carbon_checkmark-outline.png" alt="">
+    <div class="modalTitle">
+      <h2>Order <br class="mobile"> Confirmed</h2>
+  
+      <p>We hope you enjoy your food!</p>
+    </div>
+  
+    <div id="dialogOrder" class="dialogOrder">
+      <div class="orders">
+        <img src="" alt="">
+        <div class="orderContext">
+          <p><strong></strong></p>
+          <p>1x <span>@ </span></p>
+        </div>
+        <p><strong>$</strong></p>
+      </div>
+  
+    </div>
+    <div id="modalTotal" class="total">
+    </div>
+  
+    <button id="newOrder">Start New Order</button>
+  </dialog>
+
+
+
+
+
+
+</body>
+</html>
