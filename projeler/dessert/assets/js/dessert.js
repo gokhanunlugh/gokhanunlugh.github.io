@@ -5,7 +5,7 @@ function createItemHtml(product) {
   return `<div class="dessert" id="dessert">
     <div class="dessertImg">
       <img class="dImg" src="${product.image.desktop}" alt="${product.name}">
-      <button data-id="${product.id}"> <img class="cartImg" src="/assets/img/carbon_shopping-cart-plus.svg" alt="">  Add to cart</button>
+      <button data-id="${product.id}"> <img class="cartImg" src="/projeler/dessert/assets/img/carbon_shopping-cart-plus.svg" alt="">  Add to cart</button>
     </div>
     <sub>${product.category}</sub>
     <h3>${product.name}</h3>
@@ -44,7 +44,7 @@ function renderBasket() {
             <p>${x.name}</p>
             <p><span class="cartSpan">${x.quantity}x</span> &ThickSpace; &ThickSpace; @ $${x.price} &ThickSpace; <strong>$${x.quantity * x.price}</strong></p>
           </div>
-          <a data-productid="${x.productId}" class="deleteFromBasket" href="#"><img src="/assets/img/Button-RemoveItem.svg" alt=""></a>
+          <a data-productid="${x.productId}" class="deleteFromBasket" href="#"><img src="/projeler/dessert/assets/img/Button-RemoveItem.svg" alt=""></a>
         </div>`).join('');
 
   document.querySelectorAll('.deleteFromBasket').forEach(x => x.addEventListener('click', handleDeleteBtn));
