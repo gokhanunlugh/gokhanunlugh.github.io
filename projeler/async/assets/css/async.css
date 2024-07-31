@@ -1,0 +1,20 @@
+summary {
+  list-style: none;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
+}
+.container {
+  display: grid;
+  gap: 10px;
+  width: 650px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+details  {
+  border-bottom: 1px solid black;
+}
+
