@@ -9,7 +9,7 @@ async function getData(postId) {
     <summary><h3 id="title">${post.title}</h3></summary>
       <details>
         <summary><p id="body">${post.body}</p></summary>
-          <p>${comments.map(x=> `<li>${x.user.fullName} says: ${x.body}</li>`).join('')}</p></details>
+          <p>${comments.map(x=> `<li>${x.user.fullName} says: ${x.body}. (${x.likes}) Like </li>`).join('')}</p></details>
   </details>`
 }
 
