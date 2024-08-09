@@ -1,0 +1,268 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: 'Space Mono';
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+body {
+  background-color: #C5E4E7;
+}
+
+
+#root {
+  max-width: 920px;
+
+}
+
+.header img {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 50px;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  color: #5E7A7D;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: white;
+  box-shadow: 0px 32px 43px 0px #4FA6AF33;
+  border-radius: 25px 25px 0px   0px ;
+
+}
+
+.content-bill {
+  width: 311px;
+  margin-inline: auto;
+  padding-top: 32px;
+}
+
+.bill-amount {
+  background-color: #F3F9FA;
+  border: none;
+  text-align: right;
+  width: 311px;
+  height: 48px;
+  background-image: url(/img/$.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 19px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  color: #00474B;
+
+
+}
+.bill {
+  margin-bottom: 32px;
+}
+.tip-percent {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.tip-percent button {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  text-align: center;
+  border: none;
+  background-color: #00474B;
+  width: 146px;
+  height: 48px;
+  border-radius: 5px;
+  color: white;
+}
+
+.tip-percent button:active {
+  background-color: #26C2AE;
+}
+
+.tip-input {
+  background-color: #F3F9FA;  
+  border: none;
+  width: 146px;
+  height: 48px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+
+
+}
+
+.split-number {
+  background-color: #F3F9FA;
+  border: none;
+  text-align: right;
+  width: 311px;
+  height: 48px;
+  background-image: url(/img/people.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-position-x: 19px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35.54px;
+  color: #00474B;
+  margin-bottom: 32px;
+
+}
+
+
+.total {
+  background-color: #00474B;
+  width: 327px;
+  margin-inline: auto;
+  border-radius: 15px;
+  padding-inline: 24px;
+  padding-top: 37px;
+  margin-bottom: 32px;
+}
+
+.total h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 23.7px;
+  text-align: left;
+  color: white;
+}
+
+.total-tip {
+  margin-bottom: 20px;
+}
+
+.total-bill {
+  margin-bottom: 32px;
+}
+
+.reset {
+  width: 281px;
+  height: 48px;
+  border-radius: 5px;
+  background-color: #26C2AE;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29.62px;
+  text-align: center;
+  color: #00474B;
+  margin-bottom: 24px;
+}
+
+span {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 47.39px;
+  letter-spacing: -0.6666666865348816px;
+  text-align: right;
+  color: #26C2AE;
+}
+.total-tip h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-bill h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (width >= 920px) {
+  #root {
+    margin-inline: auto;
+
+  }
+  .header {
+    margin-bottom: 87px;
+    padding-top: 60px;
+  }
+  .content {
+    flex-direction: row;
+    gap: 48px;
+    border-radius: 25px 25px 25px   25px ;
+    margin-bottom: 20px;
+  }
+
+  .bill-amount {
+    width: 379px;
+  }
+  .bill {
+    margin-bottom: 40px;
+  }
+
+  .tip-percent {
+    grid-template-columns: repeat(3,1fr);
+    width: 379px;
+    margin-bottom: 40px;
+  }
+  .tip-percent button {
+    width: 117px;
+  }
+  .split-number  {
+    width: 379px;
+
+  }
+  .tip p {
+    margin-bottom: 16px;
+  }
+
+  .total {
+    width: 413px;
+    margin-top: 32px;
+    padding-inline: 40px;
+    
+  }
+  .total-tip {
+    margin-bottom: 41px;
+  }
+  .total-bill {
+    margin-bottom: 133px;
+  }
+
+  .reset {
+    width: 333px;
+  }
+  span {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 71.09px;
+    letter-spacing: -1px;
+    text-align: right;
+  }
+}
